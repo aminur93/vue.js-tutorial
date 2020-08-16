@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Css Class Concept</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <style>
+        button.redClass{
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+        }
+        
+        button{
+            background-color: blue;
+            border: 1px solid blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <button type="button" v-bind:class="{redClass:isActive}" v-on:click="isActive = !isActive">Toggle Class</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

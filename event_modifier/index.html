@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Modifiers</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <h3>Counter : {{ counter }}</h3>
+    <button type="button" @click.once="incrementby1">CLick + 1</button>
+    
+    <br><br>
+    <a href="https://www.google.com" @click.prevent>Google</a>
+    
+    <br><br>
+    <form action="#" method="post" @submit.prevent>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <br><br>
+    <div id="parent-div" @click="submitClick">
+        <button id="child-div" @click.stop="submitClick">CLick Me</button>
+    </div>
+    
+    <br><br>
+    <div class="parent-class" @click.capture="parentClass">
+        <button type="button" @click="btnClick">CLick me Again</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computed Properties</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    
+    <input type="text" placeholder="Maths Marks" v-model="maths">
+    <input type="text" placeholder="Science Marks" v-model="science">
+    <input type="text" placeholder="English Marks" v-model="english">
+    
+    <h4>Total Marks : {{ TotalMarks }}</h4>
+    
+    {{ runme() }}
+    
+    <br><br>
+    <input type="text" placeholder="Enter meter" v-model="meter">
+    
+    <h3>Convert Meter To Centimeter : {{ convertToCentimeter }}</h3>
+    
+    <br><br>
+    
+    <input type="text" placeholder="Enter First Name" v-model="firstName">
+    
+    <input type="text" placeholder="Enter Last Name" v-model="lastName">
+    
+    <h4>Full Name : {{ getFullName }}</h4>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

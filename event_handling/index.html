@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event handiling</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <h3>Counter : {{ counter }}</h3>
+    
+    <button type="button" @click="incriment(1)">Incriment by 1</button>
+    <button type="button" v-on:click="decriment(1)">Decriment by 1</button>
+    
+    <button type="button" @dblclick="incriment(5)">incriment by 5</button>
+    <button type="button" v-on:dblclick="decriment(5)">decriment by 5</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

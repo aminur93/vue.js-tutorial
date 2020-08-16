@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key Modifiers</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <input type="text" @keypress.enter="keyPressFunction">
+    <br><br>
+    <input type="text" @keyup.alt.enter="keyaltEnterFunction">
+    <br><br>
+    <input type="text" @keyup.ctrl.enter="keyctrlEnterFunction">
+    <br><br>
+    <input type="text" @keyup.delete="keydeleteFunction">
+    <br><br>
+    <input type="text" @keyup.space="keyspaceFunction">
+    <br><br>
+    <input type="text" @keyup.65="keyCodeFunction">
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

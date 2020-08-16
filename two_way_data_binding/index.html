@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Way Data Binding</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <input type="text" v-model="character">
+    <br><br>
+    
+    {{ character }}
+    
+    <br><br>
+    
+    <form action="" class="">
+        <input type="text" v-model="name" placeholder="Name"> {{ name }}
+        <br><br>
+        <input type="text" v-model="email" placeholder="Email"> {{ email }}
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

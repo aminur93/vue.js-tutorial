@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concept of data binding</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    
+    <style>
+        .fiximagesize{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <a v-bind:href="ulink" v-bind:title="title">{{ name }}</a>
+    
+    <img v-bind:src="imagelink" alt="" v-bind:class="{fiximagesize:isActive}">
+    
+    
+    <br><br><br>
+    
+    <form action="" method="post">
+        <input type="text" v-bind:value="txtname" placeholder="Name">
+        <input type="text" v-bind:value="txtemail" placeholder="Email">
+        <button type="button" name="button">Submit</button>
+    </form>
+    
+    <br><br><br>
+    
+    <div v-html="htmlConetnt"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
