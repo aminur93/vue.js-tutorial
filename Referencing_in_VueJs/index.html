@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Referencing in VueJs</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    Name : <input type="text" placeholder="Enter Name" ref="txtName"> <br><br>
+    EMail : <input type="email" placeholder="Enter Email" ref="txtEmail"> <br><br>
+    
+    <p ref="para">This is simple paragraph</p>
+    
+    <button type="button" v-on:click="btnSubmit">Submit</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

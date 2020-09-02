@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V for Directives</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<h3 style="text-align:center;">Vue Js Like It</h3><hr>
+
+<div id="my-app">
+    <ul>
+        <li v-for="(student,index) in students">{{index}} - {{ student }}</li>
+    </ul>
+    
+    <br>
+    
+    <ul>
+        <li v-for="teacher in teachers">
+            {{ teacher.name }} teaches {{ teacher.subject}}
+        </li>
+    </ul>
+    
+    <br>
+    
+    <ul>
+        <li v-for="teacher in teachers">
+            {{ teacher.name }} teaches {{ teacher.subject}}
+            <p v-for="(adr,index) in teacher.location">
+                {{ index }} - {{ adr }}
+            </p>
+        </li>
+    </ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
